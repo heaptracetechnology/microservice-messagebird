@@ -27,8 +27,9 @@ omg build
 
 ##### Create and save user
 ```sh
-$ 
+$ omg run send -a from=<PHONE_NUMBER> -a to=<PHONE_NUMBER> -a message=<MESSAGE_TEXT_BODY> -e API_KEY=<API_KEY>
 ```
+NOTE : Enter PHONE_NUMBER with country code example(INDIA) : "+910123456789"
 ## License
 ### [MIT](https://choosealicense.com/licenses/mit/)
 
