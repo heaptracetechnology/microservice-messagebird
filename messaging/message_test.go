@@ -39,7 +39,7 @@ var _ = Describe("Send SMS", func() {
 
 var _ = Describe("Send SMS", func() {
 
-	sms := SMS{From: "+910321456987", To: "+910321456987", Message: "Testing twilio microservice"}
+	sms := SMS{From: "+910321456987", To: "+910321456987", Message: "Testing microservice"}
 	requestBody := new(bytes.Buffer)
 	errr := json.NewEncoder(requestBody).Encode(sms)
 	if errr != nil {
@@ -67,7 +67,7 @@ var _ = Describe("Send SMS", func() {
 
 	os.Setenv("API_KEY", "MzRzZ1PuOgLhQnadxRb8JRHRt")
 
-	sms := SMS{From: "+917030228007", To: "+917030228007", Message: "Testing twilio microservice"}
+	sms := SMS{From: "+917030228007", To: "+917030228007", Message: "Testing microservice"}
 	requestBody := new(bytes.Buffer)
 	errr := json.NewEncoder(requestBody).Encode(sms)
 	if errr != nil {
