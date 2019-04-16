@@ -2,9 +2,8 @@
 An OMG service for MessageBird, it is a cloud communications platform that connects enterprises to their global customers.
 
 [![Open Microservice Guide](https://img.shields.io/badge/OMG-enabled-brightgreen.svg?style=for-the-badge)](https://microservice.guide)
-<!-- [![Build Status](https://travis-ci.com/heaptracetechnology/microservice-intercom.svg?branch=master)](https://travis-ci.com/heaptracetechnology/microservice-intercom)
-[![codecov](https://codecov.io/gh/heaptracetechnology/microservice-intercom/branch/master/graph/badge.svg)](https://codecov.io/gh/heaptracetechnology/microservice-intercom)
-[![GolangCI](https://golangci.com/badges/github.com/golangci/golangci-web.svg)](https://golangci.com) -->
+[![Build Status](https://travis-ci.com/heaptracetechnology/microservice-messagebird.svg?branch=master)](https://travis-ci.com/heaptracetechnology/microservice-messagebird)
+[![codecov](https://codecov.io/gh/heaptracetechnology/microservice-messagebird/branch/master/graph/badge.svg)](https://codecov.io/gh/heaptracetechnology/microservice-messagebird)
 
 
 ## [OMG](hhttps://microservice.guide) CLI
