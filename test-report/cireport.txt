@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-  <testsuite name="Messaging Suit" tests="3" failures="0" errors="0" time="0">
-      <testcase name="Send SMS Send sms message send Should result http.StatusOK" classname="Messaging Suit" time="5.0444e-05"></testcase>
-      <testcase name="Send SMS Send sms message send Should result http.StatusBadRequest" classname="Messaging Suit" time="1.1665e-05"></testcase>
-      <testcase name="Send SMS Send sms message send Should result http.StatusOK" classname="Messaging Suit" time="3.022e-06"></testcase>
-  </testsuite>
