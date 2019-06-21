@@ -11,7 +11,11 @@ import (
 	"os"
 )
 
-var apiKey = os.Getenv("MESSAGEBIRD_API_KEY")
+var (
+	apiKey = os.Getenv("MESSAGEBIRD_API_KEY")
+	from   = os.Getenv("PHONE_NUMBER_FROM")
+	to     = os.Getenv("PHONE_NUMBER_TO")
+)
 
 var _ = Describe("Send SMS", func() {
 
@@ -41,7 +45,7 @@ var _ = Describe("Send SMS", func() {
 
 var _ = Describe("Send SMS", func() {
 
-	sms := SMS{From: "+910321456987", To: "+910321456987", Message: "Testing microservice"}
+	sms := SMS{From: from, To: to, Message: "Testing microservice"}
 	requestBody := new(bytes.Buffer)
 	errr := json.NewEncoder(requestBody).Encode(sms)
 	if errr != nil {
@@ -69,7 +73,7 @@ var _ = Describe("Send SMS", func() {
 
 	os.Setenv("API_KEY", apiKey)
 
-	sms := SMS{From: "+912123456789", To: "+912123456789", Message: "Testing microservice"}
+	sms := SMS{From: from, To: to, Message: "Testing microservice"}
 	requestBody := new(bytes.Buffer)
 	errr := json.NewEncoder(requestBody).Encode(sms)
 	if errr != nil {
