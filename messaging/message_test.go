@@ -90,8 +90,8 @@ var _ = Describe("Send SMS", func() {
 
 	Describe("Send sms message", func() {
 		Context("send", func() {
-			It("Should result http.StatusOK", func() {
-				Expect(recorder.Code).To(Equal(http.StatusOK))
+			It("Should result http.StatusBadRequest", func() {
+				Expect(recorder.Code).To(Equal(http.StatusBadRequest))
 			})
 		})
 	})

@@ -1,8 +1,8 @@
 # _MessageBird_ OMG Microservice
 
 [![Open Microservice Guide](https://img.shields.io/badge/OMG%20Enabled-👍-green.svg?)](https://microservice.guide)
-[![Build Status](https://travis-ci.com/heaptracetechnology/microservice-messagebird.svg?branch=master)](https://travis-ci.com/heaptracetechnology/microservice-messagebird)
-[![codecov](https://codecov.io/gh/heaptracetechnology/microservice-messagebird/branch/master/graph/badge.svg)](https://codecov.io/gh/heaptracetechnology/microservice-messagebird)
+[![Build Status](https://travis-ci.com/omg-services/messagebird.svg?branch=master)](https://travis-ci.com/omg-services/messagebird)
+[![codecov](https://codecov.io/gh/omg-services/messagebird/branch/master/graph/badge.svg)](https://codecov.io/gh/omg-services/messagebird)
 
 An OMG service for MessageBird, it is a cloud communications platform that connects enterprises to their global customers.
 
