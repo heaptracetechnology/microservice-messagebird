@@ -1,43 +1,32 @@
-# MessageBird as a microservice
+# _MessageBird_ OMG Microservice
+
+[![Open Microservice Guide](https://img.shields.io/badge/OMG%20Enabled-👍-green.svg?)](https://microservice.guide)
+[![Build Status](https://travis-ci.com/omg-services/messagebird.svg?branch=master)](https://travis-ci.com/omg-services/messagebird)
+[![codecov](https://codecov.io/gh/omg-services/messagebird/branch/master/graph/badge.svg)](https://codecov.io/gh/omg-services/messagebird)
+
 An OMG service for MessageBird, it is a cloud communications platform that connects enterprises to their global customers.
 
-[![Open Microservice Guide](https://img.shields.io/badge/OMG-enabled-brightgreen.svg?style=for-the-badge)](https://microservice.guide)
-[![Build Status](https://travis-ci.com/heaptracetechnology/microservice-messagebird.svg?branch=master)](https://travis-ci.com/heaptracetechnology/microservice-messagebird)
-[![codecov](https://codecov.io/gh/heaptracetechnology/microservice-messagebird/branch/master/graph/badge.svg)](https://codecov.io/gh/heaptracetechnology/microservice-messagebird)
+## Direct usage in [Storyscript](https://storyscript.io/):
 
-
-## [OMG](hhttps://microservice.guide) CLI
-
-### OMG
-
-* omg validate
+##### Send Message
+```coffee
+>>> messagebird send from:'senderNumber' to:'receiverNumber' message:'testMessage'
+{"ID": "operationID","Type": "sms","Originator": "+917507704328","Body": "messageBody","CreatedDatetime": "2019-04-15T13:58:50Z","Recipients": {"recipientsDetails"}}
 ```
-omg validate
-```
-* omg build
-```
-omg build
-```
-### Test Service
 
-* Test the service by following OMG commands
+Curious to [learn more](https://docs.storyscript.io/)?
 
-### CLI
+✨🍰✨
 
-##### Create and save user
-```sh
+## Usage with [OMG CLI](https://www.npmjs.com/package/omg)
+
+##### Send Message
+```shell
 $ omg run send -a from=<PHONE_NUMBER> -a to=<PHONE_NUMBER> -a message=<MESSAGE_TEXT_BODY> -e API_KEY=<API_KEY>
 ```
-NOTE : Enter PHONE_NUMBER with country code example(INDIA) : "+910123456789"
-## License
-### [MIT](https://choosealicense.com/licenses/mit/)
+NOTE : Enter PHONE_NUMBER with country code example(INDIA) : "+919123456789"
 
-## Docker
-### Build
-```
-docker build -t microservice-messagebird .
-```
-### RUN
-```
-docker run -p 3000:3000 microservice-messagebird
-```
+**Note**: the OMG CLI requires [Docker](https://docs.docker.com/install/) to be installed.
+
+## License
+[MIT License](https://github.com/omg-services/messagebird/blob/master/LICENSE).

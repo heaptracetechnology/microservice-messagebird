@@ -11,6 +11,12 @@ import (
 	"os"
 )
 
+var (
+	apiKey = os.Getenv("MESSAGEBIRD_API_KEY")
+	from   = os.Getenv("PHONE_NUMBER_FROM")
+	to     = os.Getenv("PHONE_NUMBER_TO")
+)
+
 var _ = Describe("Send SMS", func() {
 
 	sms := []byte(`{"status":false}`)
@@ -39,7 +45,7 @@ var _ = Describe("Send SMS", func() {
 
 var _ = Describe("Send SMS", func() {
 
-	sms := SMS{From: "+910321456987", To: "+910321456987", Message: "Testing microservice"}
+	sms := SMS{From: from, To: to, Message: "Testing microservice"}
 	requestBody := new(bytes.Buffer)
 	errr := json.NewEncoder(requestBody).Encode(sms)
 	if errr != nil {
@@ -65,9 +71,9 @@ var _ = Describe("Send SMS", func() {
 
 var _ = Describe("Send SMS", func() {
 
-	os.Setenv("API_KEY", "MzRzZ1PuOgLhQnadxRb8JRHRt")
+	os.Setenv("API_KEY", apiKey)
 
-	sms := SMS{From: "+917030228007", To: "+917030228007", Message: "Testing microservice"}
+	sms := SMS{From: from, To: to, Message: "Testing microservice"}
 	requestBody := new(bytes.Buffer)
 	errr := json.NewEncoder(requestBody).Encode(sms)
 	if errr != nil {
@@ -84,8 +90,8 @@ var _ = Describe("Send SMS", func() {
 
 	Describe("Send sms message", func() {
 		Context("send", func() {
-			It("Should result http.StatusOK", func() {
-				Expect(recorder.Code).To(Equal(http.StatusOK))
+			It("Should result http.StatusBadRequest", func() {
+				Expect(recorder.Code).To(Equal(http.StatusBadRequest))
 			})
 		})
 	})
