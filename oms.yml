@@ -13,7 +13,7 @@ info:
 lifecycle:
   startup:
     command:
-      - microservice-messagebird
+      - messagebird
 actions:
   send:
     help: Send SMS

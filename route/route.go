@@ -2,7 +2,7 @@ package route
 
 import (
     "github.com/gorilla/mux"
-    messaging "github.com/heaptracetechnology/microservice-messagebird/messaging"
+    messaging "github.com/oms-services/messagebird/messaging"
     "log"
     "net/http"
 )

@@ -3,7 +3,7 @@ package messaging
 import (
 	"encoding/json"
 	"fmt"
-	result "github.com/heaptracetechnology/microservice-messagebird/result"
+	result "github.com/oms-services/messagebird/result"
 	"github.com/messagebird/go-rest-api"
 	"github.com/messagebird/go-rest-api/sms"
 	"net/http"

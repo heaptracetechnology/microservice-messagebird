@@ -1,7 +1,7 @@
 package main
 
 import (
-	route "github.com/heaptracetechnology/microservice-messagebird/route"
+	route "github.com/oms-services/messagebird/route"
 	"log"
 	"net/http"
 )
