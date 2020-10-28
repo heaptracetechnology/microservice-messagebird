@@ -2,3 +2,4 @@ github.com/gorilla/mux v1.7.3 h1:gnP5JzjVOuiZD07fKKToCAOjS0yOpj/qPETTXCCS6hw=
 github.com/gorilla/mux v1.7.3/go.mod h1:1lud6UwP+6orDFRuTfBEV8e9/aOM/c4fVVCaMa2zaAs=
 github.com/messagebird/go-rest-api v5.3.0+incompatible h1:ZHaETqmVr5120uYmKQHKwbwqFbGcLl1rCzilZScWuPM=
 github.com/messagebird/go-rest-api v5.3.0+incompatible/go.mod h1:+XI/mPytD/HkPfkOm6IDu6hWgIyePQYZ4Fb5Nlm2las=
+github.com/messagebird/go-rest-api/v6 v6.1.0/go.mod h1:Qvz26SKR97ELjoLpsWX7+pkdX3LyFP+X9pse7k0FJRU=
